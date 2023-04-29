@@ -1,11 +1,30 @@
-# Getting Started with Create React App
+# Weather Info Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an react js and spring boot application to find weather details of any city
+
+## Description
+
+It takes city name as input and display weather details of that city as shown below
+
+First the request to send to end point in backend then backend send request to external api\
+and then the response is send to the fornt end
+
+
+## Usage
+![alt text](https://user-images.githubusercontent.com/84791843/235301908-471f9f9e-28b0-43ca-97ad-8240e4521dea.png)\
+You can the application using the [this](https://weatherinfo-0dho.onrender.com) link\
+Enter any city name in Location Text Feild and Click on search button\
+Current weather details of the selected city will be displayed
+
+## Technologies and tools used
+`React js` is used for developing front end application\
+`Material UI`, a CSS frame work, is used for creating user interface\
+`Spring boot` for developing back end application
+
 
 ## Available Scripts
 
 In the project directory, you can run:
-
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -39,32 +58,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
