@@ -26,6 +26,8 @@ export default function Student() {
 }));
 
 
+  const server = "http://localhost:8080"
+
   const [location, setLocation] = useState('');
   const [weather, setWeather] = useState('');
 
@@ -34,7 +36,7 @@ export default function Student() {
     e.preventDefault();
     console.log(location);
     //api call
-    axios.get(`/weather?city=${location}`)
+    axios.get(`${{server}/weather?city=${location}`)
     .then((result )=> {
         console.log(result.data);
         setWeather(result.data);
