@@ -75,7 +75,7 @@ export default function Student() {
             </Grid>
             <Grid container spacing={2} columns={15} sx={{width:'50vmin', textAlign:'left'}}>
                 <center>
-                <Grid container item   spacing={2} sx={{textAlign:'left', marginLeft:'5vmax'}}>
+                <Grid container item   spacing={2} sx={{textAlign:'left', marginLeft:'3vw'}}>
                     <Grid item xs={14} md={6} >  <b>Location</b>  </Grid>
                     <Grid item xs={14} md={5} >  {weather.name}   </Grid>
 
