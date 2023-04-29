@@ -30,6 +30,7 @@ export default function Student() {
 
   const [location, setLocation] = useState('');
   const [weather, setWeather] = useState('');
+  const [error, setError] = useState('');
 
 
   const handleSearch = (e) => {
@@ -40,6 +41,9 @@ export default function Student() {
     .then((result )=> {
         console.log(result.data);
         setWeather(result.data);
+    }).catch((e)=>{
+      setError(e.message);
+      setWeather('');
     })
   }
 
@@ -60,10 +64,10 @@ export default function Student() {
             value={location}
             onChange={(e) => setLocation(e.target.value)}
             />
-            <Button variant="contained" color='primary' onClick={handleSearch} sx={{fontSize:'1.5vmax',fontFamily:'monospace'}}>Search</Button>
+            <Button variant="contained" color='primary' onClick={handleSearch} sx={{fontSize:'2vh',fontFamily:'monospace'}}>Search</Button>
         </Paper>
 
-        {weather && (
+        {weather ? (
         <Paper elevation={3} style={paperStyle}>
             <center>
             <Grid item xs={12} sx={{color: '#004de6', fontSize:'4vmin',marginBottom:'45px'}}>
@@ -96,7 +100,14 @@ export default function Student() {
             </center>
         
         </Paper>
-        )}
+        ):
+        <>
+        <Paper elevation={3} style={paperStyle}>
+          <div style={{color:'red', margin:'5px'}}>Enter valid city name</div>
+          {error && <div><b>Error is: </b><span color='red'>{error}</span></div>}
+          </Paper>
+        </>
+        }
     </Box>
    </Container>
     
