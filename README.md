@@ -19,7 +19,8 @@ Current weather details of the selected city will be displayed
 ## Technologies and tools used
 `React js` is used for developing front end application\
 `Material UI`, a CSS frame work, is used for creating user interface\
-`Spring boot` for developing back end application
+`Spring boot` for developing back end application\
+`OpenWeatherMap` is the External api used to retrieve weather data
 
 
 ## Available Scripts
