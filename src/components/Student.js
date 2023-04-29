@@ -26,7 +26,7 @@ export default function Student() {
 }));
 
 
-  const server = "http://localhost:8080"
+  const server = "https://weatherinfobackend.onrender.com"
 
   const [location, setLocation] = useState('');
   const [weather, setWeather] = useState('');
