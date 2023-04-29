@@ -36,7 +36,7 @@ export default function Student() {
     e.preventDefault();
     console.log(location);
     //api call
-    axios.get(`${{server}/weather?city=${location}`)
+    axios.get(`${server}/weather?city=${location}`)
     .then((result )=> {
         console.log(result.data);
         setWeather(result.data);
