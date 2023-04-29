@@ -60,7 +60,7 @@ export default function Student() {
             value={location}
             onChange={(e) => setLocation(e.target.value)}
             />
-            <Button variant="contained" color='primary' onClick={handleSearch} sx={{fontSize:'1.5vmax',fontFamily:'monospace'}}>Search</Button>
+            <Button variant="contained" color='primary' onClick={handleSearch} sx={{fontSize:'1.5vmin',fontFamily:'monospace'}}>Search</Button>
         </Paper>
 
         {weather && (
